@@ -2,14 +2,11 @@ package array
 
 import java.util.Scanner
 
-class Build_Array_from_Permutation {
-
-}
-
+//https://leetcode.com/problems/build-array-from-permutation/
 fun main(){
     val scanner =Scanner(System.`in`)
     val n=scanner.nextInt()
-    val nums=Array<Int>(n){0}
+    val nums=IntArray(n)
 
     for (i in nums.indices){
         nums[i]=scanner.nextInt()
