@@ -6,18 +6,16 @@ public class Test {
     public static void main(String[] args) {
         Scanner scanner=new Scanner(System.in);
         int n=scanner.nextInt();
-        int arr[]=new int[n];
+        String[] arr =new String[n];
 
         for (int i=0;i<n;i++){
-            arr[i]=scanner.nextInt();
+            arr[i]=scanner.nextLine();
         }
         int a=0;
-        for (int i=0;i<n;i++){
-            for (int j=i+1;j<n;j++){
-                if (arr[i]==arr[j]){
-                    a++;
-                }
-            }
+        for (int i=0;i<arr.length;i++){
+            String x=arr[i];
+            String[] temp =x.split(" ");
+            a=Math.max(a,temp.length);
         }
         System.out.println(a);
     }
