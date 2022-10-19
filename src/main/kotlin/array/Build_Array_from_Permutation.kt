@@ -5,11 +5,11 @@ import java.util.Scanner
 //https://leetcode.com/problems/build-array-from-permutation/
 fun main(){
     val scanner =Scanner(System.`in`)
-    val n=scanner.nextInt()
-    val nums=IntArray(n)
+     val n=scanner.nextInt()
+        val nums=IntArray(n)
 
-    for (i in nums.indices){
-        nums[i]=scanner.nextInt()
+        for (i in nums.indices){
+            nums[i]=scanner.nextInt()
     }
     val ans=IntArray(nums.size)
 

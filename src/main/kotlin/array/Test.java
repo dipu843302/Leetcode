@@ -5,18 +5,28 @@ import java.util.Scanner;
 public class Test {
     public static void main(String[] args) {
         Scanner scanner=new Scanner(System.in);
+        String s=scanner.next();
         int n=scanner.nextInt();
-        String[] arr =new String[n];
+        int[] indices =new int[n];
+
 
         for (int i=0;i<n;i++){
-            arr[i]=scanner.nextLine();
+            indices[i]=scanner.nextInt();
         }
-        int a=0;
-        for (int i=0;i<arr.length;i++){
-            String x=arr[i];
-            String[] temp =x.split(" ");
-            a=Math.max(a,temp.length);
+
+        String res="";
+        char[] ch = s.toCharArray();
+
+        for (int i=0;i<indices.length;i++){
+            for ( int j=0;j<indices.length;j++){
+                if (indices[j]==i){
+                    res+=ch[j];
+                    break;
+                }
+            }
         }
-        System.out.println(a);
+
+        System.out.println(res);
+
     }
 }
