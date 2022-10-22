@@ -7,6 +7,7 @@ import java.util.Scanner;
 public class Test {
     public static void main(String[] args) {
 
+
         List<List<String>> items = new ArrayList<List<String>>();
 
         List<String> list = new ArrayList<String>();
@@ -34,8 +35,8 @@ public class Test {
 
         String ruleKey = "color";
         String ruleValue = "phone";
-
-        System.out.println(countMatches(items,ruleKey,ruleValue));
+        System.out.println(  Math.abs(-15));
+      //  System.out.println(countMatches(items,ruleKey,ruleValue));
 
     }
 
